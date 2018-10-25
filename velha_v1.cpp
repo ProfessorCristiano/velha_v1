@@ -2,8 +2,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include <iostream>
-// linha m·xima 35
-// coluna m·xima 80
+// linha m√°xima 35
+// coluna m√°xima 80
 
 using namespace std;
 string J="Jogador 1";
@@ -27,7 +27,7 @@ void imprime()
 	cout<<"================================================================================\n";
 	cout<<"== "<< J <<" com " << j <<"                                                            ==\n";
 	cout<<"================================================================================\n";
-	cout<<"== Digite o N˙mero de acordo com a posiÁ„o do teclado numÈrico                ==\n";
+	cout<<"== Digite o N√∫mero de acordo com a posi√ß√£o do teclado num√©rico                ==\n";
 	cout<<"== e precione ENTER                                                           ==\n";  
 	cout<<"================================================================================\n";
 	cout<<"================================================================================\n";
@@ -47,7 +47,7 @@ void imprime()
 	cout<<"==                                                                            ==\n";
 	cout<<"================================================================================\n";
 	cout<<"== Este Jogo foi oferecido pelo Professor Cristiano Teixeira  ==================\n";
-	cout<<"== Sob a LicenÁa Apache License 2.0 ============================================\n";
+	cout<<"== Sob a Licen√ßa Apache License 2.0 ============================================\n";
 	cout<<"================================================================================\n";
 	entrada();
 }
@@ -107,7 +107,7 @@ if(qp[0][0]==qp[0][1] and qp[0][1]==qp[0][2] and qp[0][2]!=' ') // verifica linh
 			fimdejogo();
 		}
 	}
-if(qp[1][0]==qp[1][1] and qp[1][1]==qp[1][2] and qp[1][2]!=' ') // verifica linha 2
+else if(qp[1][0]==qp[1][1] and qp[1][1]==qp[1][2] and qp[1][2]!=' ') // verifica linha 2
 	{
 		if(qp[1][0]=='X')
 		{
@@ -120,7 +120,7 @@ if(qp[1][0]==qp[1][1] and qp[1][1]==qp[1][2] and qp[1][2]!=' ') // verifica linh
 			fimdejogo();
 		}
 	}
-if(qp[2][0]==qp[2][1] and qp[2][1]==qp[2][2] and qp[2][2]!=' ') // verifica linha 3
+else if(qp[2][0]==qp[2][1] and qp[2][1]==qp[2][2] and qp[2][2]!=' ') // verifica linha 3
 	{
 		if(qp[2][0]=='X')
 		{
@@ -133,7 +133,7 @@ if(qp[2][0]==qp[2][1] and qp[2][1]==qp[2][2] and qp[2][2]!=' ') // verifica linh
 			fimdejogo();
 		}
 	}
-if(qp[0][0]==qp[1][0] and qp[1][0]==qp[2][0] and qp[2][0]!=' ') // verifica coluna 1
+else if(qp[0][0]==qp[1][0] and qp[1][0]==qp[2][0] and qp[2][0]!=' ') // verifica coluna 1
 	{
 		if(qp[0][0]=='X')
 		{
@@ -146,7 +146,7 @@ if(qp[0][0]==qp[1][0] and qp[1][0]==qp[2][0] and qp[2][0]!=' ') // verifica colu
 			fimdejogo();
 		}
 	}
-if(qp[0][1]==qp[1][1] and qp[1][1]==qp[2][1] and qp[2][1]!=' ') // verifica coluna 2
+else if(qp[0][1]==qp[1][1] and qp[1][1]==qp[2][1] and qp[2][1]!=' ') // verifica coluna 2
 	{
 		if(qp[0][1]=='X')
 		{
@@ -160,7 +160,7 @@ if(qp[0][1]==qp[1][1] and qp[1][1]==qp[2][1] and qp[2][1]!=' ') // verifica colu
 		}
 	}
 
-if(qp[0][2]==qp[1][2] and qp[1][2]==qp[2][2] and qp[2][2]!=' ') // verifica coluna 3
+else if(qp[0][2]==qp[1][2] and qp[1][2]==qp[2][2] and qp[2][2]!=' ') // verifica coluna 3
 	{
 		if(qp[0][2]=='X')
 		{
@@ -173,7 +173,7 @@ if(qp[0][2]==qp[1][2] and qp[1][2]==qp[2][2] and qp[2][2]!=' ') // verifica colu
 			fimdejogo();
 		}
 	}
-if(qp[0][0]==qp[1][1] and qp[1][1]==qp[2][2] and qp[2][2]!=' ') // diagonal 1
+else if(qp[0][0]==qp[1][1] and qp[1][1]==qp[2][2] and qp[2][2]!=' ') // diagonal 1
 	{
 		if(qp[0][0]=='X')
 		{
@@ -186,7 +186,7 @@ if(qp[0][0]==qp[1][1] and qp[1][1]==qp[2][2] and qp[2][2]!=' ') // diagonal 1
 			fimdejogo();
 		}
 	}
-if(qp[0][2]==qp[1][1] and qp[1][1]==qp[2][0] and qp[2][0]!=' ') // diagonal 2
+else if(qp[0][2]==qp[1][1] and qp[1][1]==qp[2][0] and qp[2][0]!=' ') // diagonal 2
 	{
 		if(qp[0][2]=='X')
 		{
@@ -199,7 +199,15 @@ if(qp[0][2]==qp[1][1] and qp[1][1]==qp[2][0] and qp[2][0]!=' ') // diagonal 2
 			fimdejogo();
 		}
 	}	
-
+else if (qp[0][0]!=' ' and qp[0][1]!=' ' and qp[0][2]!=' ' and qp[1][0]!=' ' and qp[1][1]!=' ' and qp[1][2]!=' ' and qp[2][0]!=' ' and qp[2][1]!=' ' and qp[2][2]!=' ')
+	{
+		Vencedor='E';
+		J="Empate";
+		j='E';
+		fimdejogo();
+	}		
+	
+	
 }
 
 
@@ -227,7 +235,7 @@ void fimdejogo()
 	cout<<"================================================================================\n";
 	cout<<"\n";
 	cout<<"================================================================================\n";
-	cout<<"== O Vencedor È o "<< J<< " com o " << Vencedor <<"                                           ==\n";
+	cout<<"== O Vencedor √© o "<< J<< " com o " << Vencedor <<"                                           ==\n";
 	cout<<"================================================================================\n";
 	cout<<"==                                FIM DE JOGO                                 ==\n";
 	cout<<"==                                                                            ==\n";  
@@ -249,7 +257,7 @@ void fimdejogo()
 	cout<<"==                                                                            ==\n";
 	cout<<"================================================================================\n";
 	cout<<"== Este Jogo foi oferecido pelo Professor Cristiano Teixeira  ==================\n";
-	cout<<"== Sob a LicenÁa Apache License 2.0 ============================================\n";
+	cout<<"== Sob a Licen√ßa Apache License 2.0 ============================================\n";
 	cout<<"================================================================================\n";
 	
 	system("pause");
